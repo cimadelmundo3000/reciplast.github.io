@@ -97,10 +97,10 @@ body {
   margin-top: 30px;
 }
 .btn.blue1, .escribenos-nosotros .master .contenedor .blue1.btn, .footer .master .escribenos .blue1.btn {
-  background-color: #0070AB;
+  background-color: #555555;
 }
 .btn.blue2, .escribenos-nosotros .master .contenedor .blue2.btn, .footer .master .escribenos .blue2.btn {
-  background-color: #39C6BB;
+  background-color: #999999;
 }
 
 .title {
@@ -108,20 +108,20 @@ body {
   font-weight: 700;
   display: inline-block;
   margin-bottom: 25px;
-  color: #333;
+  color: #FFF;
   line-height: 36px;
 }
 .title.blue1 {
-  color: #0070AB !important;
+  color: #333333 !important;
 }
 .title.blue2 {
-  color: #1A82BB !important;
+  color: #777777 !important;
 }
 .title.green1 {
-  color: #00A6A0;
+  color: #333333;
 }
 .title.green2 {
-  color: #39C6BB;
+  color: #999999;
 }
 .title.white {
   color: #FFFFFF;
@@ -134,10 +134,10 @@ body {
 }
 
 :root {
-  --blue1: #0070AB;
-  --blue2: #1A82BB;
-  --green1: #00A6A0;
-  --green2: #39C6BB;
+  --blue1: #555555;
+  --blue2: #999999;
+  --green1: #555555;
+  --green2: #999999;
   --white: #FFF;
 }
 
@@ -283,9 +283,9 @@ body {
   color: #FFF;
   line-height: 32px;
   font-weight: 300 !important;
-  border-left: 5px solid rgba(6, 83, 124, 0.9);
-  background: #0070ab;
-  background: linear-gradient(90deg, rgba(0, 112, 171, 0.9) 40%, rgba(26, 130, 187, 0.2) 100%);
+  border-left: 5px solid #333;
+  background: #333;
+  background: linear-gradient(90deg, rgba(51, 51, 51, 0.8) 40%, rgba(150, 150, 150, 0.6) 100%);
 }
 .slide .master .msg span {
   font-size: 28px;
@@ -950,7 +950,7 @@ body {
 .seccion6 .master {
   margin-left: 50%;
   transform: translate(-50%, 0);
-  box-shadow: 0 10px 0 0 #00a6a09c;
+  box-shadow: 0 10px 0 0 #777777;
 }
 .seccion6 .master .title {
   margin-left: 50%;
@@ -1173,7 +1173,7 @@ body {
   display: inline-block;
   margin-bottom: 20px;
   background-repeat: no-repeat;
-  background-size: 60%;
+  background-size: contain;
   background-position: center;
   background-image: url(../assets/png/logoWhite.png);
   border-right: none;
