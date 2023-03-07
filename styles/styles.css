@@ -177,7 +177,7 @@ body {
   width: 160px;
   height: 90px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   top: calc(50% - 45px);
   position: relative;
   margin-left: 40px;
@@ -194,11 +194,21 @@ body {
   left: calc(100% - 10px);
   top: 0;
 }
+.header .master .lang {
+  padding: 5px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  vertical-align: middle;
+  position: relative;
+  margin-top: 35px;
+  float: right;
+}
 .header .master .mainBtns {
   position: relative;
   float: right;
   height: 100%;
   padding-left: 100px;
+  vertical-align: middle;
 }
 .header .master .mainBtns .mainBtn {
   position: relative;
@@ -1976,6 +1986,9 @@ body {
   .header .logo {
     width: calc(100% - 80px) !important;
     margin-left: 0 !important;
+  }
+  .header .lang {
+    margin-top: -50px !important;
   }
 
   .fullmenu .master {

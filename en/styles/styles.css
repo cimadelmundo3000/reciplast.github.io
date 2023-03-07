@@ -1,0 +1,2418 @@
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > STANDARTS
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+input, textarea, select {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.onlymovil {
+  display: none !important;
+}
+
+.onlypc {
+  display: inline-block !important;
+}
+
+.master {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.tr, .footer .master .contactanos .rrss a, .base1 .access .icon, .header .master .mainBtns .mainBtn, .btn, .escribenos-nosotros .master .contenedor .btn, .escribenos-nosotros .footer .master .contenedor .escribenos .btn, .footer .escribenos-nosotros .master .contenedor .escribenos .btn, .escribenos-nosotros .footer .master .escribenos .contenedor .btn, .footer .escribenos-nosotros .master .escribenos .contenedor .btn, .footer .master .escribenos .btn {
+  transition: all ease 200ms;
+}
+
+.hide {
+  display: none !important;
+}
+
+.btn, .escribenos-nosotros .master .contenedor .btn, .escribenos-nosotros .footer .master .contenedor .escribenos .btn, .footer .escribenos-nosotros .master .contenedor .escribenos .btn, .escribenos-nosotros .footer .master .escribenos .contenedor .btn, .footer .escribenos-nosotros .master .escribenos .contenedor .btn, .footer .master .escribenos .btn {
+  padding: 11px 40px;
+  border-radius: 100px;
+  background-color: #333;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  font-weight: 400;
+  color: #FFFF;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  border: 0;
+  cursor: pointer;
+}
+.btn:hover, .escribenos-nosotros .master .contenedor .btn:hover, .footer .master .escribenos .btn:hover {
+  background-color: #000;
+}
+.btn.nml, .escribenos-nosotros .master .contenedor .nml.btn, .footer .master .escribenos .nml.btn {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.btn.right, .escribenos-nosotros .master .contenedor .right.btn, .footer .master .escribenos .right.btn {
+  float: right;
+}
+.btn.mt, .escribenos-nosotros .master .contenedor .mt.btn, .footer .master .escribenos .mt.btn {
+  margin-top: 30px;
+}
+.btn.blue1, .escribenos-nosotros .master .contenedor .blue1.btn, .footer .master .escribenos .blue1.btn {
+  background-color: #555555;
+}
+.btn.blue2, .escribenos-nosotros .master .contenedor .blue2.btn, .footer .master .escribenos .blue2.btn {
+  background-color: #999999;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #FFF;
+  line-height: 36px;
+}
+.title.blue1 {
+  color: #333333 !important;
+}
+.title.blue2 {
+  color: #777777 !important;
+}
+.title.green1 {
+  color: #333333;
+}
+.title.green2 {
+  color: #999999;
+}
+.title.white {
+  color: #FFFFFF;
+}
+
+.ante {
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+:root {
+  --blue1: #555555;
+  --blue2: #999999;
+  --green1: #555555;
+  --green2: #999999;
+  --white: #FFF;
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > HEADER
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+.header {
+  width: 100%;
+  background-color: var(--white);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.header .master {
+  height: 100px;
+  position: relative;
+}
+.header .master .menu {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: top;
+  top: calc(50% - 20px);
+  position: relative;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  background-image: url(../assets/svg/menu.svg);
+}
+.header .master .menu:hover {
+  opacity: 0.7;
+}
+.header .master .logo {
+  width: 160px;
+  height: 90px;
+  display: inline-block;
+  vertical-align: middle;
+  top: calc(50% - 45px);
+  position: relative;
+  margin-left: 40px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../assets/png/logo.png);
+}
+.header .master .sangrado {
+  width: 1000px;
+  height: 100px;
+  position: absolute;
+  left: calc(100% - 10px);
+  top: 0;
+}
+.header .master .lang {
+  padding: 5px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  vertical-align: middle;
+  position: relative;
+  margin-top: 35px;
+  float: right;
+}
+.header .master .mainBtns {
+  position: relative;
+  float: right;
+  height: 100%;
+  padding-left: 100px;
+  vertical-align: middle;
+}
+.header .master .mainBtns .mainBtn {
+  position: relative;
+  vertical-align: top;
+  margin-left: 10px;
+  height: 100%;
+  margin-left: -101px;
+  width: 250px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  clip-path: polygon(100px 0, 100% 0%, calc(100% - 100px) 100%, 0% 100%);
+}
+.header .master .mainBtns .mainBtn span {
+  position: absolute;
+  bottom: 15px;
+  margin-left: 50%;
+  font-size: 12px;
+  color: #FFF;
+}
+.header .master .mainBtns .mainBtn span.a {
+  transform: translate(-85%, 0);
+}
+.header .master .mainBtns .mainBtn span.b {
+  transform: translate(-70%, 0);
+}
+.header .master .mainBtns .mainBtn span.c {
+  transform: translate(-80%, 0);
+}
+.header .master .mainBtns .mainBtn.a {
+  background-color: var(--blue1);
+  background-image: url(../assets/svg/shipMenu.svg), url(../assets/jpg/m1.jpg);
+  background-size: 65px, cover;
+  background-position: calc(50% + 15px) 17px, center;
+}
+.header .master .mainBtns .mainBtn.b {
+  background-color: var(--blue2);
+  background-image: url(../assets/svg/containerMenu.svg), url(../assets/jpg/m2.jpg);
+  background-size: 65px, cover;
+  background-position: calc(50% + 15px) 19px, center;
+}
+.header .master .mainBtns .mainBtn.c {
+  background-color: var(--green1);
+  background-image: url(../assets/svg/galleryMenu.svg), url(../assets/jpg/m1.jpg);
+  background-size: 40px, cover;
+  background-position: calc(50% + 10px) 15px, center;
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > SLIDE
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+.slide {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  z-index: 1;
+}
+.slide ul {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.slide ul li {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide .master {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+}
+.slide .master .msg {
+  width: calc(50% - 60px);
+  padding: 30px 30px;
+  font-size: 24px;
+  color: #FFF;
+  line-height: 32px;
+  font-weight: 300 !important;
+  border-left: 5px solid #333;
+  background: #333;
+  background: linear-gradient(90deg, rgba(51, 51, 51, 0.8) 40%, rgba(150, 150, 150, 0.6) 100%);
+}
+.slide .master .msg span {
+  font-size: 28px;
+  font-weight: 600;
+}
+.slide .rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.slide .rslides li {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.slide .rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+.slide .rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+.slide .centered-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  top: 50%;
+  left: 0;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("themes.gif") no-repeat left top;
+  margin-top: -45px;
+}
+.slide .centered-btns_nav:active {
+  opacity: 1;
+}
+.slide .centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+}
+.slide .transparent-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  display: block;
+  background: #fff;
+  /* Fix for IE6-9 */
+  opacity: 0;
+  filter: alpha(opacity=1);
+  width: 48%;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 91%;
+}
+.slide .transparent-btns_nav.next {
+  left: auto;
+  right: 0;
+}
+.slide .large-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  opacity: 0.6;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #000 url("themes.gif") no-repeat left 50%;
+  width: 38px;
+}
+.slide .large-btns_nav:active {
+  opacity: 1;
+}
+.slide .large-btns_nav.next {
+  left: auto;
+  background-position: right 50%;
+  right: 0;
+}
+.slide .centered-btns_nav:focus,
+.slide .transparent-btns_nav:focus,
+.slide .large-btns_nav:focus {
+  outline: none;
+}
+.slide .centered-btns_tabs,
+.slide .transparent-btns_tabs,
+.slide .large-btns_tabs {
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 0;
+  z-index: 1000;
+  max-width: 1200px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  text-align: left;
+  height: 12px;
+}
+.slide .centered-btns_tabs li,
+.slide .transparent-btns_tabs li,
+.slide .large-btns_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 5px;
+}
+.slide .centered-btns_tabs a,
+.slide .transparent-btns_tabs a,
+.slide .large-btns_tabs a {
+  text-indent: -9999px;
+  border-radius: 15px;
+  background-color: #CCC;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  vertical-align: top;
+}
+.slide .centered-btns_here a,
+.slide .transparent-btns_here a,
+.slide .large-btns_here a {
+  background-color: var(--blue1);
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > BASE
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+.base1 {
+  width: 100%;
+  height: 80px;
+  margin-top: -80px;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 100;
+}
+.base1.nosotros-org {
+  margin-top: -80px !important;
+}
+.base1.base2 {
+  transform: translate(-50%, 0);
+  margin-top: 10px;
+}
+.base1.base2 .main {
+  background-color: var(--green1);
+}
+.base1.base2 .transparencia {
+  background-color: var(--green1);
+}
+.base1.nosotros-mision {
+  margin-top: 20px;
+}
+.base1.nosotros-mision .main {
+  background-color: #333;
+}
+.base1.nosotros-mision .transparencia {
+  background-color: #AAA;
+}
+.base1 .main {
+  width: 100%;
+  height: 80px;
+  vertical-align: top;
+  display: inline-block;
+  background-color: var(--white);
+  position: absolute;
+  left: 0;
+  top: 0px;
+  clip-path: polygon(60% 0, 0% 100%, 100% 100%);
+}
+.base1 .transparencia {
+  width: 100%;
+  height: 100px;
+  vertical-align: top;
+  display: inline-block;
+  background-color: var(--blue1);
+  position: absolute;
+  opacity: 0.6;
+  left: 0px;
+  top: -20px;
+  clip-path: polygon(60% 0, 0% 100%, 100% 100%);
+}
+.base1 .access {
+  left: 65%;
+  top: 70%;
+  position: absolute;
+  transform: translate(-50%, 0%);
+}
+.base1 .access .icon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #333;
+  border-radius: 100px;
+  margin: 0 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.base1 .access .icon:hover {
+  background-color: #000;
+}
+.base1 .access .icon.phone {
+  background-size: 20px;
+  background-image: url(../assets/svg/phone2.svg);
+}
+.base1 .access .icon.mail {
+  background-size: 20px;
+  background-image: url(../assets/svg/email2.svg);
+}
+.base1 .inner-title {
+  width: fit-content;
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+}
+.base1 .inner-title span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.base1 .truck {
+  position: absolute;
+  width: 400px;
+  height: 280px;
+  display: inline-block;
+  right: 15%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../assets/png/carga.png);
+  top: -60px;
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > SECCION 1
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+.seccion.buques .texto, .seccion.buques .referencia {
+  height: 400px;
+}
+
+.seccion1 {
+  width: 100%;
+  display: inline-block;
+}
+.seccion1 .master {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+.seccion1 .master .referencia {
+  width: 45%;
+  margin-right: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/jpg/garra.jpg);
+  display: inline-block;
+  height: 630px;
+  vertical-align: top;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+}
+.seccion1 .master .texto {
+  width: 45%;
+  margin-left: 5%;
+  display: inline-flex;
+  align-items: center;
+  height: 100px;
+  vertical-align: top;
+  height: 630px;
+}
+.seccion1.nosotros-reciplast {
+  margin-top: 50px;
+}
+.seccion1.nosotros-reciplast .referencia {
+  width: 45%;
+  margin-right: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
+  background-image: url(../assets/png/logoWhite.png);
+  background-color: var(--blue1);
+  display: inline-block;
+  height: 500px;
+  vertical-align: middle;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+}
+.seccion1.nosotros-reciplast .texto {
+  vertical-align: middle;
+  height: fit-content;
+}
+.seccion1.nosotros-vision {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+.seccion1.nosotros-vision .referencia {
+  width: 45%;
+  margin-right: 5%;
+  background-size: cover;
+  background-image: url(../assets/jpg/nosotros-vision.jpg);
+  height: 500px;
+  vertical-align: middle;
+}
+.seccion1.nosotros-vision .texto {
+  vertical-align: middle;
+  height: fit-content;
+}
+.seccion1.buqueinicial {
+  margin-top: 50px;
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > SECCION 2
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+.seccion2 {
+  margin-top: 10px;
+  width: 100%;
+  display: inline-block;
+}
+.seccion2 .master {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+.seccion2 .master .referencia {
+  width: 45%;
+  margin-left: 5%;
+  display: inline-block;
+  height: 500px;
+  vertical-align: top;
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/jpg/buques.jpg);
+}
+.seccion2 .master .texto {
+  width: 45%;
+  margin-right: 5%;
+  display: inline-flex;
+  align-items: center;
+  height: 100px;
+  vertical-align: top;
+  height: 500px;
+}
+.seccion2 .master .texto .icon {
+  width: 90px;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  background-image: url(../assets/svg/ship.svg);
+}
+.seccion2.nosotros .icon1, .seccion2.nosotros .icon2, .seccion2.nosotros .icon3 {
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  margin-top: 25px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+.seccion2.nosotros .icon1 {
+  background-image: url(../assets/svg/ship.svg);
+}
+.seccion2.nosotros .icon2 {
+  background-image: url(../assets/svg/container.svg);
+}
+.seccion2.nosotros .icon3 {
+  width: 60px;
+  background-image: url(../assets/svg/cargo.svg);
+  background-size: contain;
+  height: 60px;
+}
+.seccion2.nosotros .referencia {
+  background-image: url(../assets/jpg/nosotros-quehacemos.jpg);
+}
+
+.buque1 {
+  background-image: url(../assets/jpg/buques/anhui.png) !important;
+}
+
+.buque2 {
+  background-image: url(../assets/jpg/buques/satira.jpg) !important;
+}
+
+.buque3 {
+  background-image: url(../assets/jpg/buques/dolphin.png) !important;
+}
+
+.buque4 {
+  background-image: url(../assets/jpg/buques/everest.jpg) !important;
+}
+
+.buque5 {
+  background-image: url(../assets/jpg/buques/kapetan.jpg) !important;
+}
+
+.buque6 {
+  background-image: url(../assets/jpg/buques/lima.jpg) !important;
+}
+
+.buque7 {
+  background-image: url(../assets/jpg/buques/madrid.jpg) !important;
+}
+
+.buque8 {
+  background-image: url(../assets/jpg/buques/mykonos.jpg) !important;
+}
+
+.buque9 {
+  background-image: url(../assets/jpg/buques/hope.jpg) !important;
+}
+
+.buque10 {
+  background-image: url(../assets/jpg/buques/pacific.jpg) !important;
+}
+
+.buque11 {
+  background-image: url(../assets/jpg/buques/brand.jpg) !important;
+}
+
+.buque12 {
+  background-image: url(../assets/jpg/buques/brianna.jpg) !important;
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > SECCION 3
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+.seccion3 {
+  margin-top: 50px;
+  width: 100%;
+  display: inline-block;
+}
+.seccion3 .master {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+.seccion3 .master .galeria {
+  width: 70%;
+  display: inline-block;
+  z-index: 2;
+  position: relative;
+}
+.seccion3 .master .galeria .img {
+  width: 32%;
+  height: 150px;
+  margin-right: 2%;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.seccion3 .master .galeria .img.tercero {
+  margin-right: 0px;
+}
+.seccion3 .master .galeria .img.a {
+  background-image: url(../assets/galeria/g1.jpg);
+}
+.seccion3 .master .galeria .img.b {
+  margin-top: -31px;
+  background-image: url(../assets/galeria/g2.jpg);
+}
+.seccion3 .master .galeria .img.c {
+  margin-top: -62px;
+  background-image: url(../assets/galeria/g3.jpg);
+}
+.seccion3 .master .galeria .img.d {
+  margin-top: -10px;
+  background-image: url(../assets/galeria/g4.jpg);
+}
+.seccion3 .master .galeria .img.e {
+  margin-top: -41px;
+  background-image: url(../assets/galeria/g5.jpg);
+}
+.seccion3 .master .galeria .img.f {
+  margin-top: -72px;
+  background-image: url(../assets/galeria/g6.jpg);
+}
+.seccion3 .master .galeria .img.g {
+  margin-top: -10px;
+  background-image: url(../assets/galeria/g7.jpg);
+}
+.seccion3 .master .galeria .img.h {
+  margin-top: -41px;
+  background-image: url(../assets/galeria/g8.jpg);
+}
+.seccion3 .master .galeria .img.i {
+  margin-top: -72px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.seccion3 .master .container {
+  width: 50%;
+  height: 130%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/png/carga.png);
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  z-index: 0;
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > SECCION 4
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+.seccion4 {
+  margin-top: 100px;
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/jpg/chatarra.jpg);
+  display: inline-block;
+  position: relative;
+}
+.seccion4 .icon {
+  height: 80px;
+  top: -73px;
+  width: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../assets/svg/camion.svg);
+  right: 100px;
+  position: absolute;
+  display: inline-block;
+}
+.seccion4 .master {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+.seccion4 .master .texto {
+  margin: 0px 0 0 50px;
+  padding: 70px 50px;
+  width: 45%;
+  margin-top: -65px;
+  display: inline-block;
+  background-color: var(--green2);
+  border-radius: 20px 20px;
+  color: #FFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../assets/jpg/m1.jpg);
+  background-position: center;
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > SECCION 5
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+.seccion5 {
+  width: 100%;
+  display: inline-block;
+}
+.seccion5 .master {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+.seccion5 .master .referencia {
+  width: 45%;
+  margin-right: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/jpg/hacemos.jpg);
+  display: inline-block;
+  height: 500px;
+  vertical-align: top;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+}
+.seccion5 .master .texto {
+  width: 40%;
+  margin-left: 10%;
+  display: inline-flex;
+  align-items: center;
+  height: 100px;
+  vertical-align: top;
+  height: 500px;
+  text-align: right;
+  position: relative;
+}
+.seccion5 .master .texto .logo {
+  width: 250px;
+  position: relative;
+  height: 120px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  background-image: url(../assets/png/logo.png);
+  margin-bottom: 30px;
+}
+.seccion5 .master .texto .iconosServicios {
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  right: 0;
+  margin-top: 30px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 72px, 70px, 48px;
+  background-position: 0px 4px, 78px 6px, 154px 0;
+  background-image: url(../assets/svg/ship.svg), url(../assets/svg/container.svg), url(../assets/svg/cargo.svg);
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > SECCION 6
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+.seccion6 {
+  width: 100%;
+  background-color: var(--green1);
+  display: inline-block;
+}
+.seccion6 .master {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  box-shadow: 0 10px 0 0 #777777;
+}
+.seccion6 .master .title {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+.seccion6 .master .texto {
+  width: 35%;
+  margin-right: 10%;
+  margin-left: 5%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-bottom: 100px;
+  color: #FFF;
+}
+.seccion6 .master .formularioSuscripcion {
+  width: 45%;
+  margin-right: 5%;
+  display: inline-block;
+  background-color: #FFF;
+  border-radius: 100px;
+  position: relative;
+  vertical-align: middle;
+  margin-bottom: 100px;
+}
+.seccion6 .master .formularioSuscripcion .input {
+  color: #000;
+  border: none;
+  outline: none;
+  padding: 6px 0 8px 0;
+  margin-left: 25px;
+  margin-right: 10px;
+  width: calc(100% - 160px);
+  background-color: transparent !important;
+  display: inline-block;
+  font-weight: 700 !important;
+}
+.seccion6 .master .formularioSuscripcion .input::placeholder {
+  color: #000;
+  font-weight: 500;
+}
+.seccion6 .master .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .master .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .seccion6 .master .formularioSuscripcion .contenedor .btn, .seccion6 .escribenos-nosotros .master .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .seccion6 .master .contenedor .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .master .formularioSuscripcion .contenedor .escribenos .btn, .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .contenedor .escribenos .btn, .seccion6 .escribenos-nosotros .footer .master .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .master .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .btn, .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .contenedor .escribenos .btn, .seccion6 .footer .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .btn, .footer .escribenos-nosotros .seccion6 .master .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .master .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .escribenos-nosotros .footer .master .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .master .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .btn, .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .footer .escribenos-nosotros .master .escribenos .contenedor .formularioSuscripcion .btn, .footer .escribenos-nosotros .seccion6 .master .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .contenedor .escribenos .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .seccion6 .escribenos-nosotros .footer .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .footer .master .formularioSuscripcion .contenedor .escribenos .btn, .footer .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .contenedor .escribenos .btn, .seccion6 .footer .escribenos-nosotros .footer .master .contenedor .escribenos .formularioSuscripcion .btn, .footer .escribenos-nosotros .footer .seccion6 .master .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .footer .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .footer .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .seccion6 .footer .escribenos-nosotros .footer .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .footer .escribenos-nosotros .footer .seccion6 .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .seccion6 .footer .escribenos-nosotros .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .footer .escribenos-nosotros .seccion6 .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .seccion6 .escribenos-nosotros .footer .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .footer .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .footer .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .seccion6 .footer .escribenos-nosotros .footer .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .footer .escribenos-nosotros .footer .seccion6 .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .seccion6 .footer .escribenos-nosotros .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .footer .escribenos-nosotros .seccion6 .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .footer .master .formularioSuscripcion .escribenos .contenedor .btn, .footer .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .footer .escribenos-nosotros .footer .master .escribenos .contenedor .formularioSuscripcion .btn, .footer .escribenos-nosotros .footer .seccion6 .master .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .footer .master .formularioSuscripcion .escribenos .btn, .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .seccion6 .footer .master .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .footer .escribenos-nosotros .master .contenedor .formularioSuscripcion .escribenos .btn, .escribenos-nosotros .seccion6 .footer .master .contenedor .formularioSuscripcion .escribenos .btn, .seccion6 .escribenos-nosotros .footer .master .formularioSuscripcion .contenedor .escribenos .btn, .escribenos-nosotros .seccion6 .footer .master .formularioSuscripcion .contenedor .escribenos .btn, .seccion6 .escribenos-nosotros .footer .master .contenedor .formularioSuscripcion .escribenos .btn, .escribenos-nosotros .seccion6 .footer .master .contenedor .formularioSuscripcion .escribenos .btn, .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .btn, .seccion6 .footer .escribenos-nosotros .master .contenedor .formularioSuscripcion .escribenos .btn, .seccion6 .escribenos-nosotros .footer .master .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .seccion6 .footer .master .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .contenedor .formularioSuscripcion .escribenos .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .contenedor .formularioSuscripcion .escribenos .btn, .seccion6 .escribenos-nosotros .footer .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .escribenos-nosotros .seccion6 .footer .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .seccion6 .escribenos-nosotros .footer .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .seccion6 .footer .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .footer .escribenos-nosotros .footer .master .formularioSuscripcion .contenedor .escribenos .btn, .seccion6 .footer .escribenos-nosotros .footer .master .contenedor .formularioSuscripcion .escribenos .btn, .seccion6 .footer .escribenos-nosotros .footer .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .seccion6 .footer .escribenos-nosotros .footer .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .seccion6 .footer .escribenos-nosotros .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .escribenos-nosotros .footer .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .escribenos-nosotros .seccion6 .footer .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .footer .escribenos-nosotros .footer .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .seccion6 .footer .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .seccion6 .footer .escribenos-nosotros .footer .master .formularioSuscripcion .escribenos .contenedor .btn, .footer .seccion6 .master .formularioSuscripcion .escribenos .btn, .footer .seccion6 .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .escribenos .contenedor .btn, .footer .seccion6 .escribenos-nosotros .master .contenedor .formularioSuscripcion .escribenos .btn, .escribenos-nosotros .footer .seccion6 .master .contenedor .formularioSuscripcion .escribenos .btn, .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .contenedor .escribenos .btn, .escribenos-nosotros .footer .seccion6 .master .contenedor .formularioSuscripcion .escribenos .btn, .footer .seccion6 .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .btn, .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .contenedor .escribenos .btn, .footer .seccion6 .escribenos-nosotros .master .contenedor .formularioSuscripcion .escribenos .btn, .footer .escribenos-nosotros .seccion6 .master .contenedor .formularioSuscripcion .escribenos .btn, .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .escribenos .contenedor .btn, .footer .seccion6 .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .btn, .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .contenedor .escribenos .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .contenedor .formularioSuscripcion .escribenos .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .contenedor .formularioSuscripcion .escribenos .btn, .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .escribenos-nosotros .footer .seccion6 .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .footer .seccion6 .escribenos-nosotros .footer .master .formularioSuscripcion .contenedor .escribenos .btn, .footer .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .contenedor .escribenos .btn, .footer .seccion6 .escribenos-nosotros .footer .master .contenedor .formularioSuscripcion .escribenos .btn, .footer .escribenos-nosotros .footer .seccion6 .master .contenedor .formularioSuscripcion .escribenos .btn, .footer .seccion6 .escribenos-nosotros .footer .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .footer .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .footer .seccion6 .escribenos-nosotros .footer .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .footer .escribenos-nosotros .footer .seccion6 .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .footer .seccion6 .escribenos-nosotros .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .contenedor .escribenos .contenedor .btn, .footer .seccion6 .escribenos-nosotros .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .footer .escribenos-nosotros .seccion6 .master .contenedor .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .escribenos .contenedor .btn, .footer .seccion6 .escribenos-nosotros .footer .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .footer .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .footer .seccion6 .escribenos-nosotros .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .footer .escribenos-nosotros .seccion6 .master .formularioSuscripcion .escribenos .contenedor .escribenos .btn, .footer .seccion6 .escribenos-nosotros .footer .master .formularioSuscripcion .escribenos .contenedor .btn, .footer .escribenos-nosotros .footer .seccion6 .master .formularioSuscripcion .escribenos .contenedor .btn, .seccion6 .footer .master .escribenos .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .master .escribenos .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .seccion6 .footer .master .escribenos .formularioSuscripcion .contenedor .btn, .seccion6 .footer .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .seccion6 .footer .master .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .master .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .seccion6 .footer .master .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .master .escribenos .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .seccion6 .footer .master .escribenos .formularioSuscripcion .contenedor .btn, .seccion6 .escribenos-nosotros .footer .master .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .seccion6 .footer .master .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .master .escribenos .formularioSuscripcion .contenedor .btn, .seccion6 .footer .escribenos-nosotros .master .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .seccion6 .footer .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .seccion6 .escribenos-nosotros .footer .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .seccion6 .footer .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .footer .master .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .footer .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .seccion6 .footer .escribenos-nosotros .footer .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .seccion6 .footer .escribenos-nosotros .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .escribenos-nosotros .seccion6 .footer .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .seccion6 .escribenos-nosotros .footer .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .seccion6 .footer .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .escribenos .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .escribenos .formularioSuscripcion .contenedor .btn, .seccion6 .escribenos-nosotros .footer .escribenos-nosotros .master .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .seccion6 .footer .escribenos-nosotros .master .escribenos .contenedor .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .footer .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .seccion6 .footer .escribenos-nosotros .footer .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .seccion6 .footer .escribenos-nosotros .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .seccion6 .footer .escribenos-nosotros .footer .master .escribenos .formularioSuscripcion .contenedor .btn, .seccion6 .footer .escribenos-nosotros .footer .master .escribenos .contenedor .formularioSuscripcion .btn, .footer .seccion6 .master .escribenos .formularioSuscripcion .btn, .footer .seccion6 .escribenos-nosotros .master .escribenos .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .footer .seccion6 .master .escribenos .formularioSuscripcion .contenedor .btn, .footer .seccion6 .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .master .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .master .contenedor .escribenos .formularioSuscripcion .btn, .footer .seccion6 .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .btn, .footer .escribenos-nosotros .seccion6 .master .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .master .escribenos .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .footer .seccion6 .master .escribenos .contenedor .formularioSuscripcion .btn, .footer .seccion6 .escribenos-nosotros .master .escribenos .formularioSuscripcion .contenedor .btn, .footer .escribenos-nosotros .seccion6 .master .escribenos .formularioSuscripcion .contenedor .btn, .footer .seccion6 .escribenos-nosotros .master .escribenos .contenedor .formularioSuscripcion .btn, .footer .escribenos-nosotros .seccion6 .master .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .footer .seccion6 .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .footer .seccion6 .escribenos-nosotros .footer .master .contenedor .escribenos .formularioSuscripcion .btn, .footer .escribenos-nosotros .footer .seccion6 .master .contenedor .escribenos .formularioSuscripcion .btn, .footer .seccion6 .escribenos-nosotros .footer .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .footer .escribenos-nosotros .footer .seccion6 .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .footer .seccion6 .escribenos-nosotros .footer .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .footer .escribenos-nosotros .footer .seccion6 .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .footer .seccion6 .escribenos-nosotros .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .footer .escribenos-nosotros .seccion6 .master .contenedor .escribenos .formularioSuscripcion .contenedor .btn, .footer .seccion6 .escribenos-nosotros .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .footer .escribenos-nosotros .seccion6 .master .contenedor .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .escribenos-nosotros .footer .seccion6 .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .escribenos .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .escribenos .formularioSuscripcion .contenedor .btn, .escribenos-nosotros .footer .seccion6 .escribenos-nosotros .master .escribenos .contenedor .formularioSuscripcion .btn, .escribenos-nosotros .footer .escribenos-nosotros .seccion6 .master .escribenos .contenedor .formularioSuscripcion .btn, .footer .seccion6 .escribenos-nosotros .footer .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .footer .escribenos-nosotros .footer .seccion6 .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .footer .seccion6 .escribenos-nosotros .footer .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .footer .escribenos-nosotros .footer .seccion6 .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .footer .seccion6 .escribenos-nosotros .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .footer .escribenos-nosotros .seccion6 .master .escribenos .formularioSuscripcion .contenedor .escribenos .btn, .footer .seccion6 .escribenos-nosotros .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .footer .escribenos-nosotros .seccion6 .master .escribenos .contenedor .escribenos .formularioSuscripcion .btn, .footer .seccion6 .escribenos-nosotros .footer .master .escribenos .formularioSuscripcion .contenedor .btn, .footer .escribenos-nosotros .footer .seccion6 .master .escribenos .formularioSuscripcion .contenedor .btn, .footer .seccion6 .escribenos-nosotros .footer .master .escribenos .contenedor .formularioSuscripcion .btn, .footer .escribenos-nosotros .footer .seccion6 .master .escribenos .contenedor .formularioSuscripcion .btn {
+  width: 120px;
+  padding: 7px 0px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 4px;
+  display: inline-block;
+}
+.seccion6.nosotros {
+  background-color: #333;
+}
+.seccion6.nosotros .master {
+  box-shadow: 0 10px 0 0 #AAA;
+  padding-bottom: 70px;
+}
+.seccion6.nosotros .master .title {
+  margin-left: 30%;
+  transform: translate(0, 0);
+}
+.seccion6.nosotros .master .texto {
+  width: 45%;
+  margin-left: 5%;
+  margin-right: 0;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  position: relative;
+  vertical-align: middle;
+  margin-bottom: 0px;
+  color: #FFF;
+  vertical-align: middle;
+}
+.seccion6.nosotros .master .logocolores {
+  width: 50%;
+  display: inline-block;
+  height: 300px;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../assets/png/logocolor.png);
+}
+.seccion6.nosotros-org {
+  margin-top: -26px;
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > FOOTER
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+.footer {
+  width: 100%;
+  margin-top: 10px;
+}
+.footer.contacto {
+  border-top: 15px solid var(--green2);
+}
+.footer .master {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+.footer .master .contactanos {
+  width: calc(50% - 50px);
+  padding-left: 50px;
+  display: inline-block;
+  background-color: #EEE;
+  vertical-align: top;
+  padding-top: 80px;
+}
+.footer .master .contactanos .info {
+  display: inline-block;
+  width: calc(100% - 100px);
+  margin-bottom: 20px;
+  padding-left: 50px;
+  background-repeat: no-repeat;
+}
+.footer .master .contactanos .info.email {
+  background-position: 0 center;
+  background-image: url(../assets/svg/email.svg);
+}
+.footer .master .contactanos .info.telefono {
+  background-position: 0 center;
+  background-image: url(../assets/svg/phone.svg);
+}
+.footer .master .contactanos .info.direccion {
+  background-position: 0 2px;
+  background-image: url(../assets/svg/location.svg);
+}
+.footer .master .contactanos .rrss {
+  width: calc(100% - 50px);
+  border-top: 1px solid #CCC;
+  margin-top: 42px;
+  height: 296px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .master .contactanos .rrss a {
+  height: 42px;
+  width: 42px;
+  display: inline-block;
+  margin: 0 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer .master .contactanos .rrss a.instagram {
+  background-image: url(../assets/svg/instagram.svg);
+}
+.footer .master .contactanos .rrss a.facebook {
+  background-image: url(../assets/svg/facebook.svg);
+}
+.footer .master .contactanos .rrss a.youtube {
+  background-image: url(../assets/svg/youtube.svg);
+}
+.footer .master .contactanos .rrss a:hover {
+  opacity: 0.7;
+}
+.footer .master .escribenos {
+  width: calc(50% - 50px);
+  padding-left: 50px;
+  display: inline-block;
+  background-color: #e0e0e0;
+  vertical-align: top;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+.footer .master .escribenos .tt {
+  font-weight: 600 !important;
+  display: inline-block;
+  color: #333;
+  margin-bottom: 5px;
+}
+.footer .master .escribenos input {
+  color: #000;
+  border: none;
+  outline: none;
+  padding: 6px 20px 8px 20px;
+  margin-right: 10px;
+  width: calc(100% - 92px);
+  display: inline-block;
+  font-weight: 700 !important;
+  border-radius: 100px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border: 1px solid #999;
+}
+.footer .master .escribenos textarea {
+  height: 100px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+  resize: none;
+  outline: none;
+  padding: 10px 20px;
+  font-weight: 700 !important;
+  width: calc(100% - 92px);
+  margin-bottom: 10px;
+  border: 1px solid #999;
+}
+.footer .master .escribenos .btn, .footer .escribenos-nosotros .master .escribenos .contenedor .btn, .escribenos-nosotros .footer .master .escribenos .contenedor .btn, .footer .escribenos-nosotros .master .contenedor .escribenos .btn, .escribenos-nosotros .footer .master .contenedor .escribenos .btn, .footer .master .escribenos .btn {
+  width: auto;
+  font-weight: 400 !important;
+}
+.footer .cierre {
+  width: 100%;
+  background-color: var(--blue1);
+}
+.footer .cierre .master {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+.footer .cierre .master .logo {
+  width: 250px;
+  height: 130px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../assets/png/logoWhite.png);
+  border-right: none;
+  padding: none;
+}
+.footer .cierre .master a {
+  padding: 0 30px;
+  font-size: 12px;
+  color: #FFF;
+  border-right: 1px solid #FFF;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+.footer .cierre .master a.last {
+  border: none;
+}
+.footer .cierre .master a:hover {
+  text-decoration: underline;
+}
+.footer .cintillo {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0 5px 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+  color: #FFF;
+  background-color: var(--blue2);
+}
+.footer .cintillo a {
+  font-size: 12px;
+  font-weight: 500 !important;
+  color: #FFF;
+  letter-spacing: 1px;
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > MENU
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+.fullmenu {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  display: none;
+  background-color: rgba(40, 40, 40, 0.97);
+  z-index: 1000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all ease 200ms;
+}
+.fullmenu.active {
+  display: inline-block;
+  opacity: 1;
+}
+.fullmenu .master {
+  height: 100px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  position: relative;
+}
+.fullmenu .master .menu {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: top;
+  top: calc(50% - 20px);
+  position: relative;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  background-image: url(../assets/svg/menuwhite.svg);
+}
+.fullmenu .master .menu:hover {
+  transition: all ease 150ms;
+  opacity: 0.7;
+}
+.fullmenu .master .close {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: top;
+  top: calc(50% - 20px);
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  background-image: url(../assets/svg/cerrar.svg);
+}
+.fullmenu .master .close:hover {
+  transition: all ease 150ms;
+  opacity: 0.7;
+}
+.fullmenu .master.content {
+  position: relative;
+  display: inline-block;
+  height: calc(100vh - 120px);
+}
+.fullmenu .master.content .btns {
+  position: relative;
+  width: fit-content;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15.1px 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  vertical-align: top;
+}
+.fullmenu .master.content .btns a {
+  font-weight: 300 !important;
+  letter-spacing: 0.4px;
+  width: 200px;
+  padding: 10px 0px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  transition: all ease 200ms;
+  border-bottom: 1px solid transparent;
+}
+.fullmenu .master.content .btns a:hover {
+  border-color: var(--green1);
+}
+.fullmenu .master.content .btns a.buques {
+  width: 130px;
+  padding-left: 70px;
+  background-position: left center;
+  background-size: 54px;
+  background-image: url(../assets/svg/shipMenu.svg);
+}
+.fullmenu .master.content .btns a.contenedores {
+  width: 130px;
+  padding-left: 70px;
+  background-position: left center;
+  background-size: 54px;
+  background-image: url(../assets/svg/containerMenu.svg);
+}
+.fullmenu .master.content .btns a.galeria {
+  width: 130px;
+  padding-left: 70px;
+  background-position: 7px center;
+  background-size: 38px;
+  background-image: url(../assets/svg/galleryMenu.svg);
+}
+.fullmenu .master.content .complement {
+  position: relative;
+  padding-left: 50px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  width: fit-content;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px 0;
+  float: right;
+  margin-right: 20%;
+  vertical-align: top;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.fullmenu .master.content .complement .redes {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.fullmenu .master.content .complement .redes a {
+  width: 42px;
+  height: 42px;
+  margin: 0 25px 0 0;
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.fullmenu .master.content .complement .redes a:hover {
+  transform: all ease 150ms;
+  opacity: 0.8;
+}
+.fullmenu .master.content .complement .redes a.youtube {
+  background-image: url(../assets/svg/youtube.svg);
+}
+.fullmenu .master.content .complement .redes a.instagram {
+  background-image: url(../assets/svg/instagram.svg);
+}
+.fullmenu .master.content .complement .redes a.facebook {
+  background-image: url(../assets/svg/facebook.svg);
+}
+.fullmenu .master.content .complement .email {
+  padding: 10px 10px 10.3px 50px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: 9px center;
+  width: fit-content;
+  background-image: url(../assets/svg/email2.svg);
+  font-weight: 300 !important;
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid transparent;
+}
+.fullmenu .master.content .complement .email:hover {
+  border-color: var(--green1);
+}
+.fullmenu .master.content .complement .telefono {
+  padding: 10px 10px 10.3px 50px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: 9px center;
+  width: fit-content;
+  background-image: url(../assets/svg/phone2.svg);
+  font-weight: 300 !important;
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid transparent;
+}
+.fullmenu .master.content .complement .telefono:hover {
+  border-color: var(--green1);
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > INNER
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+.top-banner {
+  width: 100%;
+  height: 350px;
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+}
+.top-banner.nosotros {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/jpg/nosotros-header.jpg);
+}
+.top-banner.contacto {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/jpg/contacto-header.jpg);
+}
+.top-banner.buques {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/jpg/buques-header.jpg);
+}
+.top-banner.contenedores {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/jpg/contenedores-header.jpg);
+}
+.top-banner.galeria {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/jpg/galeria-header.jpg);
+}
+
+.video-youtube {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 60px;
+}
+.video-youtube .master {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+.video-youtube .master .contenedor-video {
+  text-align: left;
+  position: relative;
+  width: 600px;
+  display: inline-block;
+}
+.video-youtube .master .contenedor-video .tit {
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  color: #000;
+  margin-bottom: 20px;
+}
+.video-youtube .master .contenedor-video .logoyt {
+  position: absolute;
+  right: 0;
+  top: calc(0% - 12px);
+  width: 80px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../assets/png/youtube.png);
+}
+.video-youtube .master .contenedor-video iframe {
+  display: inline-block;
+  width: 600px;
+  height: 400px;
+  position: relative;
+}
+
+.valores {
+  width: 100%;
+  padding-top: 50px;
+  background-color: #E9E9E9;
+  position: relative;
+  display: inline-block;
+}
+.valores .master {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+.valores .master .valor {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  margin: 0 2.5%;
+  background-color: #CCC;
+  display: inline-block;
+  margin-bottom: 100px;
+  background-repeat: no-repeat;
+}
+.valores .master .valor.v1 {
+  background-position: center;
+  background-size: 120px;
+  background-image: url(../assets/svg/v1.svg);
+}
+.valores .master .valor.v2 {
+  background-position: center;
+  background-size: 110px;
+  background-image: url(../assets/svg/v2.svg);
+}
+.valores .master .valor.v3 {
+  background-position: center;
+  background-size: 120px;
+  background-image: url(../assets/svg/v3.svg);
+}
+.valores .master .valor.v4 {
+  background-position: center;
+  background-size: 120px;
+  background-image: url(../assets/svg/v4.svg);
+}
+.valores .master .valor.v5 {
+  background-position: center 35px;
+  background-size: 90px;
+  background-image: url(../assets/svg/v5.svg);
+}
+.valores .master .valor.v6 {
+  background-position: center;
+  background-size: 110px;
+  background-image: url(../assets/svg/v6.svg);
+}
+.valores .master .valor.v7 {
+  background-position: center;
+  background-size: 120px;
+  background-image: url(../assets/svg/v7.svg);
+}
+.valores .master .valor.v8 {
+  background-position: center;
+  background-size: 130px;
+  background-image: url(../assets/svg/v8.svg);
+}
+.valores .master .valor .v {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-top: calc(100% + 10px);
+}
+
+.organizacion {
+  vertical-align: top;
+  width: 100%;
+  padding: 40px 0 150px 0;
+  display: inline-block;
+  margin-top: 50px;
+}
+.organizacion .master {
+  width: fit-content;
+  padding: 0 10px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+.organizacion .master .title {
+  margin-bottom: 0;
+}
+
+.datos {
+  width: 100%;
+  padding: 100px 0 0 0;
+}
+.datos .master {
+  margin-left: 50%;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+.datos .master .contenedor {
+  width: 60%;
+  display: inline-block;
+  text-align: left;
+  border-bottom: 1px solid #999;
+  padding-bottom: 50px;
+}
+.datos .master .contenedor .email {
+  padding: 10px 10px 10.3px 50px;
+  color: #333333;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: fit-content;
+  background-image: url(../assets/svg/email.svg);
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid transparent;
+  display: block;
+}
+.datos .master .contenedor .email:hover {
+  border-color: var(--green1);
+}
+.datos .master .contenedor .telefono {
+  padding: 10px 10px 10.3px 50px;
+  color: #333333;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: fit-content;
+  background-image: url(../assets/svg/phone.svg);
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid transparent;
+  display: block;
+}
+.datos .master .contenedor .telefono:hover {
+  border-color: var(--green1);
+}
+.datos .master .contenedor .direccion {
+  padding: 10px 10px 10.3px 50px;
+  color: #333333;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left 13px;
+  width: fit-content;
+  background-image: url(../assets/svg/location.svg);
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid transparent;
+  display: block;
+}
+
+.redes-contacto {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 50px 0 50px 0;
+  vertical-align: top;
+}
+.redes-contacto .master {
+  margin-left: 50%;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+.redes-contacto a {
+  width: 42px;
+  height: 42px;
+  margin: 0 12px;
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.redes-contacto a:hover {
+  transform: all ease 150ms;
+  opacity: 0.8;
+}
+.redes-contacto a.youtube {
+  background-image: url(../assets/svg/youtube.svg);
+}
+.redes-contacto a.instagram {
+  background-image: url(../assets/svg/instagram.svg);
+}
+.redes-contacto a.facebook {
+  background-image: url(../assets/svg/facebook.svg);
+}
+
+.escribenos-nosotros {
+  width: 100%;
+  background-color: #DDD;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 30px 0 40px 0;
+  border-top: 15px solid #CCC;
+  border-bottom: 15px solid #CCC;
+}
+.escribenos-nosotros .master {
+  margin-left: 50%;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+.escribenos-nosotros .master .contenedor {
+  width: 60%;
+  display: inline-block;
+  text-align: left;
+  text-align: center;
+}
+.escribenos-nosotros .master .contenedor .title {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.escribenos-nosotros .master .contenedor .tt {
+  font-weight: 600 !important;
+  display: inline-block;
+  color: #333;
+  margin-bottom: 5px;
+  width: 60%;
+  text-align: left;
+}
+.escribenos-nosotros .master .contenedor input {
+  color: #000;
+  border: none;
+  outline: none;
+  padding: 6px 20px 8px 20px;
+  margin-right: 10px;
+  width: calc(60% - 40px);
+  display: inline-block;
+  font-weight: 700 !important;
+  border-radius: 100px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border: 1px solid #999;
+  text-align: left;
+}
+.escribenos-nosotros .master .contenedor textarea {
+  height: 100px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+  resize: none;
+  outline: none;
+  padding: 10px 20px;
+  font-weight: 700 !important;
+  width: calc(60% - 40px);
+  margin-bottom: 10px;
+  border: 1px solid #999;
+  text-align: left;
+}
+.escribenos-nosotros .master .contenedor .btn, .escribenos-nosotros .footer .master .contenedor .escribenos .btn, .footer .escribenos-nosotros .master .contenedor .escribenos .btn, .escribenos-nosotros .footer .master .escribenos .contenedor .btn, .footer .escribenos-nosotros .master .escribenos .contenedor .btn {
+  width: auto;
+  font-weight: 400 !important;
+}
+
+.ubicanos {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 50px 0 50px 0;
+}
+.ubicanos .master {
+  background-color: #fff;
+  margin-left: 50%;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+.ubicanos .master .contenedor {
+  width: 60%;
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 20px;
+  text-align: left;
+  position: relative;
+}
+.ubicanos .master .contenedor .maps {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../assets/png/maps.png);
+}
+.ubicanos .mapa {
+  height: 80vh;
+}
+
+.iconos {
+  margin-bottom: 40px;
+}
+
+.icono1, .icono2, .icono3 {
+  width: 100px;
+  height: 60px;
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icono1 {
+  background-size: contain;
+  background-image: url(../assets/svg/ship.svg);
+}
+
+.icono2 {
+  background-size: contain;
+  background-image: url(../assets/svg/container.svg);
+}
+
+.icono3 {
+  background-size: contain;
+  background-image: url(../assets/svg/cargo.svg);
+}
+
+.contenedor {
+  width: 100%;
+}
+.contenedor.first {
+  margin-top: 120px;
+}
+.contenedor .master {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  display: grid !important;
+  grid-template-columns: auto 40%;
+  align-items: center;
+  gap: 50px;
+}
+.contenedor .master .texto .title {
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+.contenedor .master .texto .fecha {
+  font-size: 14px;
+  font-weight: 600;
+}
+.contenedor .master .texto .texto {
+  margin-top: 3px;
+  color: #000;
+  font-size: 15px;
+}
+.contenedor .master .foto {
+  background-color: #F0F0F0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 250px;
+  position: relative;
+}
+.contenedor .master .foto .line {
+  width: 20px;
+  height: 100px;
+  position: absolute;
+  left: -20px;
+  top: calc(50% - 50px);
+  border-top: 1px solid var(--green1);
+  border-left: 1px solid var(--green1);
+  border-bottom: 1px solid var(--green1);
+}
+
+.galeria-full {
+  width: 100%;
+  margin-top: 120px;
+}
+.galeria-full .master {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: top;
+  gap: 50px;
+  cursor: pointer;
+}
+.galeria-full .master .item:hover .pic {
+  transform: translate(0px, -5px);
+}
+.galeria-full .master .item:hover .tit {
+  color: var(--blue1);
+}
+.galeria-full .master .item .pic {
+  min-height: 180px;
+  background-color: #F0F0F0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  position: relative;
+  transition: all ease 150ms;
+  box-shadow: -2px 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+.galeria-full .master .item .pic .line1 {
+  width: 8px;
+  height: 80px;
+  left: -9px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  border-top: 1px solid var(--green1);
+  border-left: 1px solid var(--green1);
+  border-bottom: 1px solid var(--green1);
+}
+.galeria-full .master .item .pic .line2 {
+  width: 5px;
+  height: 60px;
+  right: -6px;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  border-top: 1px solid var(--green2);
+  border-right: 1px solid var(--green2);
+  border-bottom: 1px solid var(--green2);
+}
+.galeria-full .master .item .tit {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.modalfoto {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000000;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+.modalfoto.active {
+  display: inline-block !important;
+}
+.modalfoto .lafoto {
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  display: inline-block;
+  background-color: #F0F0F0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #555;
+}
+.modalfoto .lafoto .cerrar {
+  width: 32px;
+  height: 32px;
+  right: 0;
+  top: -48px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../assets/svg/cerrar.svg);
+  cursor: pointer;
+  transition: all ease 150ms;
+}
+.modalfoto .lafoto .cerrar:hover {
+  opacity: 0.6;
+}
+
+.organ {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+/*///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// > MOVIL
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+@media (max-width: 1023px) {
+  .onlymovil {
+    display: inline-block !important;
+  }
+
+  .onlypc {
+    display: none !important;
+  }
+
+  .header .logo {
+    width: calc(100% - 80px) !important;
+    margin-left: 0 !important;
+  }
+  .header .lang {
+    margin-top: -50px !important;
+  }
+
+  .fullmenu .master {
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+  .fullmenu .close {
+    right: 20px !important;
+  }
+  .fullmenu .content {
+    height: calc(100vh - 100px) !important;
+    overflow-y: auto;
+    width: calc(100% - 50px);
+    margin-left: 50px !important;
+    margin-right: none !important;
+  }
+  .fullmenu .content .btns {
+    top: 0 !important;
+    gap: 10px 0 !important;
+    transform: none !important;
+  }
+  .fullmenu .content .complement {
+    margin-top: 20px;
+    top: 0px !important;
+    transform: none !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+    float: none !important;
+    border-left: none !important;
+    margin-top: 30px !important;
+  }
+
+  .slide {
+    position: relative;
+    height: 60vh;
+  }
+  .slide .msg {
+    width: calc(90% - 60px) !important;
+  }
+  .slide .centered-btns_tabs, .slide .transparent-btns_tabs, .slide .large-btns_tabs {
+    text-align: center;
+  }
+  .slide .centered-btns_tabs li, .slide .transparent-btns_tabs li, .slide .large-btns_tabs li {
+    margin: 0 5px;
+  }
+  .slide .centered-btns_tabs a, .slide .transparent-btns_tabs a, .slide .large-btns_tabs a {
+    margin: 0 5px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .base1 {
+    margin-top: 0 !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+  .base1 .transparencia, .base1 .main {
+    display: none;
+  }
+  .base1 .access {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: none;
+    text-align: center;
+    position: relative;
+  }
+  .base1 .access a {
+    display: inline-block;
+  }
+  .base1 .access .icon {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .base1.init {
+    margin-top: 70px !important;
+  }
+  .base1 .inner-title {
+    left: 0 !important;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 10px 0;
+  }
+  .base1 .truck {
+    top: calc(100% + 100px);
+    width: 100%;
+    right: 0;
+  }
+
+  .seccion1 .referencia {
+    width: 100% !important;
+    margin-right: 0 !important;
+    background-position: 30% center !important;
+  }
+  .seccion1 .texto {
+    width: calc(100% - 40px) !important;
+    padding: 30px 20px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    height: auto !important;
+  }
+
+  .seccion2 .referencia {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    background-position: 30% center !important;
+  }
+  .seccion2 .texto {
+    width: calc(100% - 40px) !important;
+    padding: 0 20px 30px 20px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    height: auto !important;
+  }
+  .seccion2 .texto .btn, .seccion2 .texto .footer .master .escribenos .btn, .footer .master .escribenos .seccion2 .texto .btn, .seccion2 .texto .escribenos-nosotros .master .contenedor .btn, .escribenos-nosotros .master .contenedor .seccion2 .texto .btn {
+    float: right;
+  }
+
+  .seccion3 .title {
+    margin-bottom: 70px;
+    width: 100%;
+    text-align: center;
+  }
+  .seccion3 .galeria {
+    width: 90% !important;
+    margin-left: 5% !important;
+    z-index: 0 !important;
+  }
+  .seccion3 .galeria .btn, .seccion3 .galeria .footer .master .escribenos .btn, .footer .master .escribenos .seccion3 .galeria .btn, .seccion3 .galeria .escribenos-nosotros .master .contenedor .btn, .escribenos-nosotros .master .contenedor .seccion3 .galeria .btn {
+    text-align: center;
+    padding: 11px 15px;
+  }
+  .seccion3 .container {
+    width: 100% !important;
+    height: 300px !important;
+    left: 0 !important;
+    right: auto !important;
+    top: calc(100% - 70px);
+    z-index: 1 !important;
+    background-size: contain !important;
+  }
+
+  .seccion4 {
+    margin-top: 300px !important;
+  }
+  .seccion4 .icon {
+    top: -53px;
+  }
+  .seccion4 .texto {
+    padding: 95px 20px 40px 20px !important;
+    width: calc(80% - 40px) !important;
+    margin: -65px 0 0 10% !important;
+    text-align: center;
+  }
+
+  .seccion5 .referencia {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    background-position: 30% center !important;
+  }
+  .seccion5 .texto {
+    width: calc(100% - 40px) !important;
+    padding: 0 20px 30px 20px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+  .seccion5 .texto .logo {
+    background-position: center !important;
+  }
+
+  .seccion6 .title {
+    width: 100% !important;
+    transform: none !important;
+    margin-left: 0 !important;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .seccion6 .texto {
+    width: 90% !important;
+    text-align: center !important;
+    margin-right: 0 !important;
+    margin-left: 5% !important;
+    margin-bottom: 30px !important;
+  }
+  .seccion6 .formularioSuscripcion {
+    width: 90% !important;
+    margin-right: 0 !important;
+    margin-left: 5% !important;
+    margin-bottom: 60px !important;
+  }
+
+  .footer .title {
+    width: 100% !important;
+    transform: none !important;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  .footer .contactanos, .footer .escribenos {
+    width: calc(100% - 40px) !important;
+    padding: 80px 20px 0 20px !important;
+  }
+  .footer .contactanos .info, .footer .escribenos .info {
+    width: calc(100% - 50px) !important;
+  }
+  .footer .contactanos .rrss, .footer .escribenos .rrss {
+    width: 100% !important;
+    margin-top: 40px !important;
+    height: 126px !important;
+  }
+  .footer .contactanos input, .footer .contactanos textarea, .footer .escribenos input, .footer .escribenos textarea {
+    width: calc(100% - 42px) !important;
+  }
+  .footer .contactanos .nml, .footer .escribenos .nml {
+    width: 150px !important;
+    float: right;
+  }
+  .footer .escribenos {
+    padding-bottom: 60px !important;
+  }
+  .footer .cierre .master {
+    padding-bottom: 20px !important;
+  }
+  .footer .cierre .master a {
+    display: block !important;
+    margin: 15px 0 !important;
+    font-size: 16px !important;
+  }
+  .footer .cierre .master .logo {
+    width: 100% !important;
+    background-size: contain !important;
+    padding: 0 !important;
+  }
+  .footer .cintillo {
+    width: calc(100% - 40px) !important;
+    padding: 15px 20px 5px 20px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .top-banner {
+    height: 60vh;
+  }
+
+  .contenedor.first {
+    margin-top: 370px !important;
+  }
+  .contenedor .master {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+  .contenedor .master .texto:first-child {
+    margin-top: 0px;
+  }
+  .contenedor .master .texto {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  .contenedor .master .texto .c {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .contenedor .master .line {
+    top: -10px !important;
+    left: calc(50% - 100px) !important;
+    border-top: 1px solid var(--green1) !important;
+    border-bottom: none !important;
+    border-right: 1px solid var(--green1) !important;
+    width: 200px !important;
+    height: 9px !important;
+  }
+
+  .galeria-full {
+    margin-top: 90px !important;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+  }
+  .galeria-full .master {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .modalfoto .lafoto {
+    width: 90%;
+    left: 5%;
+    height: 40%;
+    top: 30%;
+  }
+
+  .seccion1.nosotros-reciplast {
+    margin-top: 80px !important;
+  }
+  .seccion1.nosotros-reciplast .referencia {
+    background-position: center !important;
+    background-size: 60%;
+  }
+
+  .video-youtube {
+    width: 90% !important;
+    margin-left: 5% !important;
+    margin-bottom: 30px !important;
+  }
+  .video-youtube .master {
+    margin-left: 0 !important;
+    transform: none;
+  }
+  .video-youtube .contenedor-video {
+    width: 100% !important;
+  }
+  .video-youtube .contenedor-video iframe {
+    width: 100% !important;
+  }
+
+  .seccion6.nosotros .logocolores {
+    width: 100% !important;
+  }
+
+  .seccion1.nosotros-vision {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .valores {
+    margin-bottom: 50px;
+  }
+
+  .valores .master {
+    margin-left: 0;
+    transform: none;
+  }
+
+  .valores .master .valor {
+    width: 120px;
+    height: 120px;
+    margin: 0 5%;
+    margin-bottom: 60px;
+  }
+  .valores .master .valor .v {
+    font-size: 14px;
+  }
+  .valores .master .valor.v1 {
+    background-size: 80px;
+  }
+  .valores .master .valor.v2 {
+    background-size: 70px;
+  }
+  .valores .master .valor.v3 {
+    background-size: 80px;
+  }
+  .valores .master .valor.v4 {
+    background-size: 85px;
+  }
+  .valores .master .valor.v5 {
+    background-position: center 17px;
+    background-size: 70px;
+  }
+  .valores .master .valor.v6 {
+    background-position: center;
+    background-size: 70px;
+  }
+  .valores .master .valor.v7 {
+    background-size: 70px;
+  }
+  .valores .master .valor.v8 {
+    background-size: 95px;
+  }
+
+  .datos {
+    padding-top: 70px;
+  }
+  .datos .contenedor {
+    width: 90% !important;
+    margin-left: 0 !important;
+    padding-bottom: 48px !important;
+  }
+
+  .top-banner.contacto {
+    background-position: 60% center;
+  }
+
+  .escribenos-nosotros .contenedor {
+    width: 90% !important;
+  }
+  .escribenos-nosotros .contenedor .title {
+    text-align: center !important;
+    margin-bottom: 20px !important;
+  }
+  .escribenos-nosotros .contenedor .tt {
+    width: 100% !important;
+  }
+  .escribenos-nosotros .contenedor input, .escribenos-nosotros .contenedor textarea {
+    width: calc(100% - 42px) !important;
+  }
+  .escribenos-nosotros .contenedor .nml {
+    width: 200px !important;
+    text-align: center !important;
+    float: right !important;
+  }
+
+  .ubicanos .contenedor {
+    width: 90% !important;
+  }
+  .ubicanos .contenedor .title {
+    margin-bottom: 0px !important;
+  }
+  .ubicanos .contenedor .maps {
+    width: 140px !important;
+    top: -7px !important;
+  }
+
+  .organizacion {
+    margin-top: 0;
+    padding: 0px 0 60px 0;
+  }
+  .organizacion .master {
+    margin-left: 0;
+    transform: none;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
