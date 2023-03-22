@@ -64,7 +64,7 @@ body {
 }
 
 .hide {
-  display: none !important;
+  display: none;
 }
 
 .btn, .escribenos-nosotros .master .contenedor .btn, .escribenos-nosotros .footer .master .contenedor .escribenos .btn, .footer .escribenos-nosotros .master .contenedor .escribenos .btn, .escribenos-nosotros .footer .master .escribenos .contenedor .btn, .footer .escribenos-nosotros .master .escribenos .contenedor .btn, .footer .master .escribenos .btn {
@@ -752,6 +752,34 @@ body {
 
 .buque12 {
   background-image: url(../assets/jpg/buques/brianna.jpg) !important;
+}
+
+.buquen1 {
+  background-image: url(../assets/jpg/buques/bn1.png) !important;
+}
+
+.buquen2 {
+  background-image: url(../assets/jpg/buques/bn2.png) !important;
+}
+
+.buquen3 {
+  background-image: url(../assets/jpg/buques/bn3.jpg) !important;
+}
+
+.buquen4 {
+  background-image: url(../assets/jpg/buques/bn4.jpg) !important;
+}
+
+.buquen5 {
+  background-image: url(../assets/jpg/buques/bn5.jpg) !important;
+}
+
+.buquen6 {
+  background-image: url(../assets/jpg/buques/bn7.jpeg) !important;
+}
+
+.buquen7 {
+  background-image: url(../assets/jpg/buques/bn18.jpg) !important;
 }
 
 /*///////////////////////////////////////////////////////////////
@@ -1451,6 +1479,7 @@ body {
   display: inline-block;
   position: relative;
   margin-bottom: 60px;
+  margin-top: 60px;
 }
 .video-youtube .master {
   position: relative;
@@ -1494,7 +1523,8 @@ body {
 
 .valores {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 80px;
   background-color: #E9E9E9;
   position: relative;
   display: inline-block;
@@ -1505,7 +1535,6 @@ body {
   text-align: center;
   margin-left: 50%;
   transform: translate(-50%, 0);
-  text-align: center;
 }
 .valores .master .valor {
   position: relative;
@@ -1517,6 +1546,7 @@ body {
   display: inline-block;
   margin-bottom: 100px;
   background-repeat: no-repeat;
+  vertical-align: top;
 }
 .valores .master .valor.v1 {
   background-position: center;
@@ -1846,7 +1876,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 250px;
+  min-height: 350px;
   position: relative;
 }
 .contenedor .master .foto .line {

@@ -795,6 +795,29 @@ body {
 .buque12{
     background-image: url(../assets/jpg/buques/brianna.jpg) !important;
 }
+
+.buquen1{
+    background-image: url(../assets/jpg/buques/bn1.png) !important;
+}
+.buquen2{
+    background-image: url(../assets/jpg/buques/bn2.png) !important;
+}
+.buquen3{
+    background-image: url(../assets/jpg/buques/bn3.jpg) !important;
+}
+.buquen4{
+    background-image: url(../assets/jpg/buques/bn4.jpg) !important;
+}
+.buquen5{
+    background-image: url(../assets/jpg/buques/bn5.jpg) !important;
+}
+.buquen6{
+    background-image: url(../assets/jpg/buques/bn7.jpeg) !important;
+}
+.buquen7{
+    background-image: url(../assets/jpg/buques/bn18.jpg) !important;
+}
+
 /*///////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////// > SECCION 3
@@ -1546,6 +1569,7 @@ body {
     display: inline-block;
     position: relative;
     margin-bottom: 60px;
+    margin-top: 60px;
     .master{
         position: relative;
         display: inline-block;
@@ -1593,7 +1617,8 @@ body {
 
 .valores{
     width: 100%;
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 80px;
     background-color: #E9E9E9;
     position: relative;
     display: inline-block;
@@ -1604,7 +1629,6 @@ body {
             text-align: center;
             margin-left: 50%;
             transform: translate(-50%, 0);  
-            text-align: center;
             .valor{
                 position: relative;
                 width: 180px;
@@ -1616,6 +1640,7 @@ body {
                 display: inline-block;
                 margin-bottom: 100px;
                 background-repeat: no-repeat;
+                vertical-align: top;
                 &.v1{
                     background-position: center;
                     background-size: 120px;
@@ -1976,7 +2001,7 @@ body {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            min-height: 250px;
+            min-height: 350px;
             position: relative;
             .line{
                 width: 20px;
